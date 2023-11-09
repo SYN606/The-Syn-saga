@@ -1,0 +1,19 @@
+.main {
+    margin-top: 10em;
+}
+
+.description {
+    margin-top: 10em;
+}
+
+.table-data {
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.9px);
+    -webkit-backdrop-filter: blur(10.9px);
+}
+.table-data th,
+.table-data td {
+    padding: 1em;
+}

@@ -1,0 +1,52 @@
+.card {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.9px);
+    -webkit-backdrop-filter: blur(2.9px);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.date {
+    font-size: 0.75em !important;
+}
+
+.badge {
+    background-color: aqua;
+    color: black;
+}
+
+.pagination-nav {
+    margin-top: 5em;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+
+}
+
+.pagination {
+    margin: 0;
+
+}
+
+.pagination * {
+    background-color: transparent;
+    color: black;
+}
+
+.pagination li {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.page-link:hover {
+    background-color: rgb(107, 179, 241);
+}
+
+.page-link {
+    text-decoration: none;
+
+}

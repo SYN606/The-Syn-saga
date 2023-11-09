@@ -1,0 +1,36 @@
+{% block body_content %}
+<footer>
+  <div class="container">
+    <div class="row justify-content-center align-items-center pt-3 gap-3">
+      <div class="col-md-5 first-cont p-2">
+
+        <p>We extend our heartfelt gratitude for being a part of the Syn Saga journey. Thank you for your continuous
+          support and enthusiasm as we continue to strive for excellence and innovation. Together, let's create an
+          enduring saga of synergy and growth.
+          <hr>
+          <strong>Thanks for visiting.</strong>
+        </p>
+      </div>
+      <div class="col-md-5 first-cont p-2">
+        <p>
+          <strong>&copy; <span id="currentYear"></span> Syn Saga. All rights reserved.</strong> No part of this website may be reproduced or used in
+          any form without permission.
+          <hr>
+          <strong>Designed with ❤️ by Syn 606</strong> for storytellers and dreamers.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock body_content %}
+
+{% block under_body_content %}
+<script>
+  function displayCurrentYear() {
+      var year = new Date().getFullYear();
+      document.getElementById('currentYear').textContent = year;
+  }
+
+  window.addEventListener('load', displayCurrentYear);
+</script>
+{% endblock under_body_content %}

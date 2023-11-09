@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{blog.blog_title}}{% endblock title %}
+
+{% block head_content %}
+    <link rel="stylesheet" href="{% static "css/blog-render.css" %}">
+{% endblock head_content %}
+
+{% block body_content %}
+
+<div class="container main">
+    <h3>{{blog.blog_title}}</h3>
+    <div class="row justify-content-between border rounded">
+        <div class="col-md-7">
+            {% for tag in blog.tags.all %}
+            <a href="{% url "tagged" tag.slug %}">
+                <span class="badge text-bg-info">
+                    {{ tag }}
+                </span></a>
+            {% endfor %}
+        </div>
+        <div class="col-md-3">
+            {{blog.date}}
+        </div>
+    </div>
+
+
+    <div class="description">
+        {{blog.content | safe}}
+    </div>
+</div>
+
+{% endblock body_content %}

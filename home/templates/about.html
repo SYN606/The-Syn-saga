@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{title}}{% endblock title %}
+
+{% block head_content %}
+<link rel="stylesheet" href="{% static "css/about.css" %}">
+{% endblock head_content %}
+
+
+{% block body_content %}
+
+<div class="container main">
+    <h4 class="text-dark"><i class="fa-solid fa-address-card" style="color: #000000;"></i> About me</h4>
+    <p>
+        Hey there...
+        <br>
+        This is <strong>SYN 606</strong>. I am a computer geek who loves to learn new technologies about computer and
+        science, also i
+        love to perform cybersecurity stuff, researching about advance topics of computers and other things that are
+        related to computer and science.
+        <br>
+        I love to study and research about IOT. IOT is quite interesting but seems of a little bit from computer topics
+        because it contains numerous of that are related to mechanics and electronics. I also study about
+        <strong>embedded programming</strong>
+        and hardware such as <strong>micro-controllers</strong>.
+        <br>
+        I know 3 major programming languages such as <strong>Python, C language, Rust</strong>, also i know javascript
+        and some
+        frame-works. Node-js is one of them.
+        I use <strong>Django</strong> based on python for backend development. Django is fun but it take a quite bit
+        time to learn the
+        concepts of it.
+        <br>
+        mmmm... I also know some databases such as <strong>SQL, POSTGRESQL and REDISH</strong>, Redish is quite fun but
+        has a high
+        learning curve.
+    </p>
+    <hr>
+    <h4 class="text-dark"><i class="fa-brands fa-confluence" style="color: #000000;"></i> What configuration i use </h4>
+    <p>
+        I use fully customised configurations either they are hardware or software. I love ricing things.</p>
+    <div class="mx-5">
+        <h5><i class="fa-solid fa-desktop" style="color: #000000;"></i> Hardware Configurations</h5>
+        <p>
+            I use desktop for all of my productivity task. It has <strong>i3 10-generation</strong> overclocked at
+            4.4GHz mounted on
+            <strong>ASUS Prime</strong> series motherboard. It has <strong>8-Gigs</strong> of <strong>DDR</strong>4 RAM
+            clocked at <strong>2666 MHz </strong>by Crucial that is more that enough for day today task. Also of
+            additional storage i have a <strong>NAS of 2TB</strong> and in <strong>2 ssd of Western Digital
+                Green</strong> and a <strong>Hard Disk of 500-Gigs</strong>
+            that all are connected via sata interface. I use <strong>TP-Link Archer T2U PLUS</strong> wifi antenna for
+            wifi that also
+            supports monitor mode.
+            <br>
+            I use <strong>Zebronics Zeb Transformers</strong> Mouse and Keyboard Combo. I have <strong>22.5 inches MARQ
+                by Flipkart</strong> moniter that
+            supports <strong>75Hz</strong> refresh rate and has <strong>5ms</strong> response time on a VA panel. I use
+            <strong>Cosmic byte GS430</strong> Headphones as my sound output
+            device also i have a JBL Bluetooth speaker connected via AUX cable with my PC.
+        </p>
+        <h5><i class="fa-brands fa-uncharted" style="color: #000000;"></i> Software Configurations</h5>
+        <p>
+            When it come to computer the first thing comes in mind is operating system. I use <strong>Garuda
+                Linux</strong> based on <strong>Arch
+                Linux</strong> as my daily driver but i have my own os that i use for Cybersecurity purpose named
+            <strong>orb1t</strong>.
+            I use <strong>VS Code</strong> for programming as a text editor. VS Code is very decent Code Editor supports
+            various types of extensions.
+            I don't prefer Google and Google based products. I use <strong>Mozilla Firefox Developer Edition</strong>.
+            <img src="{% static "images/desktop.png" %}" alt="404 Error | Image Not Found." class="img-fluid">
+        </p>
+    </div>
+</div>
+
+{% endblock body_content %}

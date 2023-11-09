@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(224, 238, 250);
+}
+
+nav {
+    margin-top: 1em;
+    backdrop-filter: blur(2px) saturate(185%);
+    -webkit-backdrop-filter: blur(6px) saturate(185%);
+    background-color: rgba(17, 25, 40, 0.41);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.header-text {
+    font-size: 30px;
+}
+
+.header-text a {
+    text-decoration: none;
+}
+
+.background-text {
+    position: relative;
+}
+
+.background-text::before {
+    content: "606";
+    position: absolute;
+    bottom: 25;
+    z-index: -1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(216, 131, 131);
+    font-size: 15em;
+}
+
+/* body */
+.main {
+    margin-top: 15em;
+}
+
+.image {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 15em;
+    border-radius: 1em;
+    margin-left: auto;
+    -webkit-box-shadow: 10px 10px 33px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 33px -19px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 33px -19px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .image {
+        display: none;
+    }
+}
+
+/* footer */
+
+footer {
+    height: 25em;
+    margin-top: 5em;
+}
+
+footer {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    position: relative;
+}
+
+footer .first-cont {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer::before {
+    content: "©-606";
+    position: absolute;
+    left: 25%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(247, 184, 184);
+    font-size: 15em;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    footer::before {
+        font-size: 7em;
+        left: 7%;
+        top: 20%;
+    }
+
+    footer {
+        height: auto;
+        padding-top: 4em;
+        padding-bottom: 6em;
+    }
+
+}
