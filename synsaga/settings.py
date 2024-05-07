@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure-nqogodoj_jb16y68&h_kq#(#n_y&p4tbkkiovp2sesj^2#&w&*
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [".vercel.app"]
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
