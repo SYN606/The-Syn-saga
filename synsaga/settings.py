@@ -1,12 +1,15 @@
 from pathlib import Path
 import os
+
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-nqogodoj_jb16y68&h_kq#(#n_y&p4tbkkiovp2sesj^2#&w&*'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [".vercel.app"]
+ALLOWED_HOSTS = [".vercel.app", "127.0.0.1", ".now.sh"]
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
@@ -57,12 +60,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'synsaga.wsgi.application'
 
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get("DB_NAME"),
+        'USER': os.environ.get("DB_USER"),
+        'PASSWORD': os.environ.get("DB_PASSWORD"),
+        'HOST': os.environ.get("DB_HOST"),
+        'PORT': os.environ.get("DB_PORT"),
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {

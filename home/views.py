@@ -14,8 +14,5 @@ def about_me(request):
     }
     return render(request, 'about.html', data)
 
-# def handelling_404(request, exception):
-#     data = {
-#         'title' : '404 Error not found'
-#     }
-#     return render(request, '404.html', data)
+def error_404(request, exception):
+    return render(request, '404.html')

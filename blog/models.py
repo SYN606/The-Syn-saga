@@ -9,7 +9,7 @@ class Blog(models.Model):
     tags = TaggableManager()
     desc = models.CharField(max_length=50)
     content = RichTextUploadingField()
-    slug = AutoSlugField(populate_from='blog_title', unique=True, null=True, default=None)
+    slug = AutoSlugField(populate_from='blog_title', unique=True, null=True, default=None) # type: ignore
     date = models.DateField(auto_now=True)
     
 
