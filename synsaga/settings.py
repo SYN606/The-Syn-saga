@@ -65,11 +65,11 @@ WSGI_APPLICATION = 'synsaga.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get("DB_NAME"),
-        'USER': os.environ.get("DB_USER"),
-        'PASSWORD': os.environ.get("DB_PASSWORD"),
-        'HOST': os.environ.get("DB_HOST"),
-        'PORT': os.environ.get("DB_PORT"),
+        'NAME': 'postgres',
+        'USER': 'postgres.mfjnulgprrmjxgqdavbf',
+        'PASSWORD': "vX=4?'MF.K~a~bZ",
+        'HOST': 'aws-0-ap-south-1.pooler.supabase.com',
+        'PORT': 5432,
     }
 }
 
