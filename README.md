@@ -9,8 +9,8 @@ Welcome to **The Syn Saga**, a blogging website using django and bootstrap.
 ## Features
 
 - Glassmorphism UI
-- Django as backend 
-- Sqlite3 database
+- Django backend 
+- Postgres Database
 - Fast, reliable and secure using Admin panel
 
 ## Getting Started
@@ -38,7 +38,7 @@ To run **The Syn Saga** locally, follow these steps:
 4. Run the project:
 
    ```bash
-   python manage.py startserver
+   python manage.py runserver
    ```
 
 ## Contributing
